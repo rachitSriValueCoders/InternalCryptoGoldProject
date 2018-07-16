@@ -1,0 +1,47 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons start style="order: 1">
+      <button ion-button icon-only color="white" menuToggle>
+        <ion-icon name="menu"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-title text-center>
+      <span style="color: #fff;">My Balance</span>
+    </ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only color="white">
+        <ion-icon name="notifications"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+
+
+<ion-content padding>
+  <ion-grid>
+    <ion-card style="padding: 20px; position: relative;">
+      <ion-icon name="bulb" class="card-background"></ion-icon>
+      <ion-row text-center>
+        <ion-col col-12>
+          <span>Your Current account balance</span>
+          <span style="background: #ffd701; border: solid 2px #efc700; border-radius: 50%; padding: 11px 9px; color: #424242; margin-left: 10px">256</span> 
+        </ion-col>
+      </ion-row>
+    </ion-card>
+    <ion-card style="padding: 20px; position: relative;">
+      <ion-row>
+        <ion-col col-12>
+          {{authSuccess}}
+          <span>Scan this QR code to receive coins</span>
+          <div style="margin: 20px;"></div>
+          <span>
+            <qrcode [qrdata]="678253618273" [size]="256" [level]="'M'"></qrcode>
+          </span>
+          <div style="margin: 20px;"></div>
+          <span>Wallet Address: 678253618273</span>
+        </ion-col>
+      </ion-row>
+    </ion-card>
+  </ion-grid>
+</ion-content>
