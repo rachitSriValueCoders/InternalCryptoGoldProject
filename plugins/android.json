@@ -24,6 +24,9 @@
     },
     "cordova-plugin-android-fingerprint-auth": {
       "PACKAGE_NAME": "io.ionic.starter"
+    },
+    "cordova-plugin-touch-id": {
+      "PACKAGE_NAME": "io.ionic.starter"
     }
   },
   "dependent_plugins": {}

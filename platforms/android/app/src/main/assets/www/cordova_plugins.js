@@ -31,6 +31,14 @@ module.exports = [
     "clobbers": [
       "FingerprintAuth"
     ]
+  },
+  {
+    "id": "cordova-plugin-touch-id.TouchID",
+    "file": "plugins/cordova-plugin-touch-id/www/TouchID.js",
+    "pluginId": "cordova-plugin-touch-id",
+    "clobbers": [
+      "window.plugins.touchid"
+    ]
   }
 ];
 module.exports.metadata = 
@@ -41,7 +49,8 @@ module.exports.metadata =
   "cordova-plugin-splashscreen": "5.0.2",
   "cordova-plugin-ionic-webview": "1.1.19",
   "cordova-plugin-ionic-keyboard": "2.0.5",
-  "cordova-plugin-android-fingerprint-auth": "1.4.4"
+  "cordova-plugin-android-fingerprint-auth": "1.4.4",
+  "cordova-plugin-touch-id": "3.3.1"
 };
 // BOTTOM OF METADATA
 });
